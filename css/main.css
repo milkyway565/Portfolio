@@ -1,0 +1,317 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+li {
+  list-style-type: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #828282;
+  font-weight: 700;
+  transition: all .5s;
+}
+
+a:hover {
+  color: #000;
+}
+
+/* !Header */
+
+.header__top-item {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #828282;
+  padding-top: 33px;
+  padding-bottom: 31px;
+}
+
+.header__top-link {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.header__content {
+  padding-bottom: 104px;
+}
+
+.header__content-inner {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-bottom: 50px;
+
+}
+
+.header__content-title {
+  font-size: 47px;
+  line-height: 58px;
+  max-width: 123px;
+
+}
+
+.header__content-status {
+  width: 155px;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 500;
+  align-self: flex-end;
+}
+
+.header__content-language span {
+  font-size: 18px;
+}
+
+.header__content-language {
+  align-self: flex-end;
+  transform: rotate(269deg);
+  position: relative;
+  bottom: 27px;
+  left: 27px;
+}
+
+.header__content-images {
+  width: 100%;
+}
+
+.header__content-imagesmob{
+  display: none;
+}
+
+.burger {
+  display: none;
+}
+
+
+/* !Header */
+
+
+/* !AboutMe */
+
+.aboutme {
+  background: #F6F6F6;
+  padding: 120px 0 62px;
+}
+
+.aboutme__title {
+  text-align: center;
+  font-size: 34px;
+  line-height: 42px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.aboutme__text {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 485px;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 500;
+  margin-bottom: 45px;
+}
+
+/* !AboutMe */
+
+/* !Skills */
+.skills {
+  padding: 91px 0 110px;
+}
+
+.skills__title {
+  font-size: 34px;
+  line-height: 42px;
+  margin-bottom: 69px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.skills__box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+
+
+.skills__text {
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  margin-bottom: 83px;
+}
+
+.skills__box-img {
+  margin: 0 auto;
+  display: block;
+  padding-bottom: 23px;
+}
+
+.skills__box-text {
+  display: block;
+  text-align: center;
+  padding-bottom: 41px;
+  max-width: 82px;
+  margin: 0 auto;
+}
+
+/* !Skills */
+
+
+/* !Portfolio */
+
+.portfolio {
+  padding: 112px 0 96px;
+  background: #F6F6F6;
+}
+
+.portfolio__title {
+  font-size: 34px;
+  line-height: 42px;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 47px;
+}
+
+.portfolio__item {
+  margin-bottom: 100px;
+}
+
+.portfolio__item-img {
+  width: 100%;
+
+}
+
+.portfolio__text-link {
+  text-align: center;
+  display: block;
+  margin-top: 44px;
+  font-size: 18px;
+  line-height: 21px;
+  color: #070707;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+
+/* !Portfolio */
+
+
+/* !Footer */
+.footer {
+  padding: 114px 0 123px;
+  text-align: center;
+}
+
+.footer__item {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.footer__title {
+  font-size: 34px;
+  line-height: 42px;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.footer__text {
+  width: 267px;
+  margin: 0 auto 29px;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 500;
+}
+
+.footer__btn {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+  padding: 13px 0px;
+  background-color: black;
+  /* border-radius: 25%; */
+  border: none;
+  margin-bottom: 85px;
+  display: block;
+  max-width: 300px;
+  margin: 0 auto 56px;
+  border-radius: 20px;
+}
+
+.footer__social {
+  margin: 0 30px;
+}
+
+.footer a:hover {
+  color: white;
+}
+
+.footer__likeme {
+  font-size: 14px;
+  line-height: 17px;
+  color: #828282;
+}
+
+
+/* !Footer */
+
+/* ?Media request */
+
+@media (max-width: 992px) {
+  .skills__box {
+    justify-content: space-around;
+  }
+}
+
+
+@media (max-width: 500px) {
+  .header__content-images{
+    display: none;
+  }
+  .header__content-imagesmob{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .header__top-item {
+    display: none;
+  }
+
+  .header__content-inner {
+    display: block;
+    position: relative;
+  }
+
+  .header__content-language {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+    width: 34px;
+    height: 34px;
+    border: none;
+    margin-top: 25px;
+    margin-left: auto;
+    position: absolute;
+    top: -21px;
+    right: 11px;
+    background: transparent;
+  }
+
+  .burger__img {
+    display: block;
+  }
+
+}
